@@ -8,3 +8,9 @@ cur = conn.cursor()
 
 # Execute a test query
 cur.execute("SELECT * FROM clients")
+
+# Se modifica para 1.10 
+
+# Añado un  where al SELECT
+cur.execute("SELECT * FROM clients WHERE salario < 2000")
+
